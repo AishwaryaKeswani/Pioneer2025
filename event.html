@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pioneer 2k25 - Event Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#praklap">Praklap</a></li>
+                <li><a href="#abhivyakti">Abhivyakti</a></li>
+                <li><a href="#battleblitz">Battle Blitz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="event-section" id="praklap">
+        <h2>Praklap - Poster Presentation</h2>
+        <p>A creative and intellectual space to showcase your posters on tech innovations.</p>
+        <button onclick="registerEvent('praklap')">Register Now</button>
+        <button onclick="showEventDetails('praklap')">See Details</button>
+    </section>
+
+    <section class="event-section" id="abhivyakti">
+        <h2>Abhivyakti - Paper Presentation</h2>
+        <p>Present your innovative research papers to a panel of experts in the field of technology.</p>
+        <button onclick="registerEvent('abhivyakti')">Register Now</button>
+        <button onclick="showEventDetails('abhivyakti')">See Details</button>
+    </section>
+
+    <section class="event-section" id="battleblitz">
+        <h2>Battle Blitz - Gaming Tournament</h2>
+        <p>Compete in an intense gaming battle for the championship title.</p>
+        <button onclick="registerEvent('battleblitz')">Register Now</button>
+        <button onclick="showEventDetails('battleblitz')">See Details</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pioneer 2k25 | All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
