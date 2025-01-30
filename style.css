@@ -80,6 +80,7 @@ nav ul li a:hover {
     text-align: center;
     transition: transform 0.3s ease;
     position: relative;
+    height: 400px; /* Ensure a fixed height for event cards */
 }
 
 .event-card img {
@@ -104,6 +105,7 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     color: white;
+    height: 200px; /* Ensure the background covers the height */
 }
 
 #abhivyakti {
@@ -111,6 +113,7 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     color: white;
+    height: 200px; /* Ensure the background covers the height */
 }
 
 #battleblitz {
@@ -118,6 +121,7 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     color: white;
+    height: 200px; /* Ensure the background covers the height */
 }
 
 .event-buttons button {
