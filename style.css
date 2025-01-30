@@ -69,6 +69,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
+/* Event Cards */
 .event-card {
     background-color: #fff;
     width: 300px;
@@ -78,6 +79,7 @@ nav ul li a:hover {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
+    position: relative;
 }
 
 .event-card img {
@@ -94,6 +96,28 @@ nav ul li a:hover {
 .event-card p {
     font-size: 16px;
     margin-bottom: 20px;
+}
+
+/* Event-Specific Backgrounds */
+#praklap {
+    background-image: url('https://source.unsplash.com/300x200/?technology,projects,innovation');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#abhivyakti {
+    background-image: url('https://source.unsplash.com/300x200/?research,education');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#battleblitz {
+    background-image: url('https://source.unsplash.com/300x200/?gaming,competition');
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
 
 .event-buttons button {
