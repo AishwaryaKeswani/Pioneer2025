@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pioneer 2k25 - Event Page</title>
+    <title>Pioneer 2k25 Events</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,54 +19,52 @@
     </header>
 
     <section class="banner">
-        <div class="container">
-            <h1>Pioneer 2k25</h1>
-            <p>Join us in the national-level tech festival with exciting events.</p>
-        </div>
+        <h1>Pioneer 2k25 - National Level Tech Festival</h1>
+        <p>Explore the exciting events and register for your favorite!</p>
     </section>
 
     <section class="events">
-        <div class="event-card" id="praklap">
-            <img src="praklap.jpg" alt="Praklap">
-            <h2>Praklap - Poster Presentation</h2>
-            <p>Showcase your creative tech posters to the world.</p>
+        <div id="praklap" class="event-card">
+            <img src="https://source.unsplash.com/300x200/?technology,projects,innovation" alt="Praklap">
+            <h2>Praklap</h2>
+            <p>Project Presentations - Showcase your innovative ideas and solutions.</p>
             <div class="event-buttons">
-                <button class="register-btn" onclick="registerEvent('praklap')">Register Now</button>
-                <button class="details-btn" onclick="showEventDetails('praklap')">See Details</button>
+                <button onclick="window.location.href='register.html'">Register Now</button>
+                <button onclick="showDetails('praklap')">See Details</button>
             </div>
         </div>
 
-        <div class="event-card" id="abhivyakti">
-            <img src="abhivyakti.jpg" alt="Abhivyakti">
-            <h2>Abhivyakti - Paper Presentation</h2>
-            <p>Present your research and tech papers to industry experts.</p>
+        <div id="abhivyakti" class="event-card">
+            <img src="https://source.unsplash.com/300x200/?research,education" alt="Abhivyakti">
+            <h2>Abhivyakti</h2>
+            <p>Paper Presentation - Share your research and academic insights.</p>
             <div class="event-buttons">
-                <button class="register-btn" onclick="registerEvent('abhivyakti')">Register Now</button>
-                <button class="details-btn" onclick="showEventDetails('abhivyakti')">See Details</button>
+                <button onclick="window.location.href='register.html'">Register Now</button>
+                <button onclick="showDetails('abhivyakti')">See Details</button>
             </div>
         </div>
 
-        <div class="event-card" id="battleblitz">
-            <img src="battleblitz.jpg" alt="Battle Blitz">
-            <h2>Battle Blitz - Gaming Tournament</h2>
-            <p>Compete for the ultimate gaming championship.</p>
+        <div id="battleblitz" class="event-card">
+            <img src="https://source.unsplash.com/300x200/?gaming,competition" alt="Battle Blitz">
+            <h2>Battle Blitz</h2>
+            <p>Gaming Tournament - Compete in an epic gaming battle!</p>
             <div class="event-buttons">
-                <button class="register-btn" onclick="registerEvent('battleblitz')">Register Now</button>
-                <button class="details-btn" onclick="showEventDetails('battleblitz')">See Details</button>
+                <button onclick="window.location.href='register.html'">Register Now</button>
+                <button onclick="showDetails('battleblitz')">See Details</button>
             </div>
         </div>
     </section>
 
-    <!-- Modal for event details -->
+    <!-- Modal for Event Details -->
     <div id="eventModal" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
-            <iframe id="eventDetailsIframe" width="100%" height="500px"></iframe>
+            <embed id="eventDetails" src="" width="100%" height="500px">
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 Pioneer 2k25 | All rights reserved.</p>
+        <p>&copy; 2025 Pioneer 2k25. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
