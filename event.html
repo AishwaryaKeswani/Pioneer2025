@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Header Navigation -->
     <header>
         <nav>
             <ul>
@@ -18,39 +20,35 @@
         </nav>
     </header>
 
-    <section class="banner">
-        <h1>Pioneer 2k25 - National Level Tech Festival</h1>
-        <p>Explore the exciting events and register for your favorite!</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Pioneer 2k25</h1>
+        <p>The Ultimate Tech Festival</p>
     </section>
 
+    <!-- Events Section -->
     <section class="events">
-        <div id="praklap" class="event-card">
-            <img src="https://source.unsplash.com/300x200/?technology,projects,innovation" alt="Praklap">
-            <h2>Praklap</h2>
-            <p>Project Presentations - Showcase your innovative ideas and solutions.</p>
-            <div class="event-buttons">
-                <button onclick="window.location.href='register.html'">Register Now</button>
-                <button onclick="showDetails('praklap')">See Details</button>
+        <div id="praklap" class="event-card" style="background-image: url('https://source.unsplash.com/600x400/?technology,innovation');">
+            <div class="overlay">
+                <h2>Praklap</h2>
+                <p>Project Presentations</p>
+                <button class="details-btn" onclick="showDetails('praklap')">See Details</button>
             </div>
         </div>
 
-        <div id="abhivyakti" class="event-card">
-            <img src="https://source.unsplash.com/300x200/?research,education" alt="Abhivyakti">
-            <h2>Abhivyakti</h2>
-            <p>Paper Presentation - Share your research and academic insights.</p>
-            <div class="event-buttons">
-                <button onclick="window.location.href='register.html'">Register Now</button>
-                <button onclick="showDetails('abhivyakti')">See Details</button>
+        <div id="abhivyakti" class="event-card" style="background-image: url('https://source.unsplash.com/600x400/?education,conference');">
+            <div class="overlay">
+                <h2>Abhivyakti</h2>
+                <p>Paper Presentations</p>
+                <button class="details-btn" onclick="showDetails('abhivyakti')">See Details</button>
             </div>
         </div>
 
-        <div id="battleblitz" class="event-card">
-            <img src="https://source.unsplash.com/300x200/?gaming,competition" alt="Battle Blitz">
-            <h2>Battle Blitz</h2>
-            <p>Gaming Tournament - Compete in an epic gaming battle!</p>
-            <div class="event-buttons">
-                <button onclick="window.location.href='register.html'">Register Now</button>
-                <button onclick="showDetails('battleblitz')">See Details</button>
+        <div id="battleblitz" class="event-card" style="background-image: url('https://source.unsplash.com/600x400/?gaming,competition');">
+            <div class="overlay">
+                <h2>Battle Blitz</h2>
+                <p>Gaming Tournament</p>
+                <button class="details-btn" onclick="showDetails('battleblitz')">See Details</button>
             </div>
         </div>
     </section>
@@ -59,10 +57,12 @@
     <div id="eventModal" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
-            <embed id="eventDetails" src="" width="100%" height="500px">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
         </div>
     </div>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Pioneer 2k25. All Rights Reserved.</p>
     </footer>
