@@ -7,16 +7,15 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
+    background-color: #f0f0f0;
     color: #333;
-    line-height: 1.6;
 }
 
 /* Header Navigation */
 header {
     background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    color: white;
+    padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -44,54 +43,64 @@ nav ul li a:hover {
     border-radius: 4px;
 }
 
-/* Banner Section */
-.banner {
-    background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
+/* Hero Section */
+.hero {
+    background: linear-gradient(45deg, #0d6efd, #6610f2);
     color: white;
     text-align: center;
     padding: 100px 20px;
 }
 
-.banner h1 {
+.hero h1 {
     font-size: 48px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.banner p {
-    font-size: 22px;
+.hero p {
+    font-size: 24px;
 }
 
 /* Events Section */
 .events {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px 20px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
 }
 
-/* Event Cards */
 .event-card {
-    background-color: #fff;
-    width: 300px;
-    margin: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
     position: relative;
-    height: 400px; /* Ensure a fixed height for event cards */
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
-.event-card img {
+.event-card:hover {
+    transform: scale(1.05);
+}
+
+.event-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .event-card h2 {
     font-size: 24px;
-    margin: 20px 0;
+    margin-bottom: 10px;
 }
 
 .event-card p {
@@ -99,48 +108,18 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* Event-Specific Backgrounds */
-#praklap {
-    background-image: url('https://source.unsplash.com/300x200/?technology,projects,innovation');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    height: 200px; /* Ensure the background covers the height */
-}
-
-#abhivyakti {
-    background-image: url('https://source.unsplash.com/300x200/?research,education');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    height: 200px; /* Ensure the background covers the height */
-}
-
-#battleblitz {
-    background-image: url('https://source.unsplash.com/300x200/?gaming,competition');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    height: 200px; /* Ensure the background covers the height */
-}
-
-.event-buttons button {
-    background-color: #007bff;
+.details-btn {
+    padding: 10px 20px;
+    background-color: #0d6efd;
     color: white;
     border: none;
-    padding: 12px 20px;
-    margin: 10px;
     cursor: pointer;
-    border-radius: 5px;
     font-size: 16px;
+    border-radius: 5px;
 }
 
-.event-buttons button:hover {
-    background-color: #0056b3;
-}
-
-.event-card:hover {
-    transform: scale(1.05);
+.details-btn:hover {
+    background-color: #6610f2;
 }
 
 /* Modal Styling */
@@ -158,11 +137,11 @@ nav ul li a:hover {
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: white;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
+    max-width: 600px;
     width: 80%;
-    max-width: 800px;
 }
 
 .close-btn {
@@ -180,5 +159,4 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-    margin-top: 40px;
 }
