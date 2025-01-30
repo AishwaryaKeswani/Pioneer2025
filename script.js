@@ -1,15 +1,19 @@
 // Function to show event details in the modal
 function showDetails(event) {
     var modal = document.getElementById('eventModal');
-    var eventDetails = document.getElementById('eventDetails');
+    var modalTitle = document.getElementById('modalTitle');
+    var modalDescription = document.getElementById('modalDescription');
 
-    // Set the PDF or content for each event
+    // Set the title and description for each event
     if (event === 'praklap') {
-        eventDetails.src = 'praklap_details.pdf';  // Add your own PDF file path
+        modalTitle.innerHTML = 'Praklap - Project Presentations';
+        modalDescription.innerHTML = 'Present your innovative projects and ideas to a panel of judges.';
     } else if (event === 'abhivyakti') {
-        eventDetails.src = 'abhivyakti_details.pdf';  // Add your own PDF file path
+        modalTitle.innerHTML = 'Abhivyakti - Paper Presentations';
+        modalDescription.innerHTML = 'Share your research papers and academic insights with experts.';
     } else if (event === 'battleblitz') {
-        eventDetails.src = 'battleblitz_details.pdf';  // Add your own PDF file path
+        modalTitle.innerHTML = 'Battle Blitz - Gaming Tournament';
+        modalDescription.innerHTML = 'Compete with the best players in an exciting gaming battle.';
     }
 
     // Show the modal
