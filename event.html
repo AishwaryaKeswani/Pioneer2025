@@ -1,72 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pioneer 2k25 Events</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pioneer 2k25 Events</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="main-container">
+    <h1>Pioneer 2k25 Events</h1>
 
-    <!-- Header Navigation -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#praklap">Praklap</a></li>
-                <li><a href="#abhivyakti">Abhivyakti</a></li>
-                <li><a href="#battleblitz">Battle Blitz</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Pioneer 2k25</h1>
-        <p>The Ultimate Tech Festival</p>
-    </section>
-
-    <!-- Events Section -->
-    <section class="events">
-        <div id="praklap" class="event-card" style="background-image: url('https://source.unsplash.com/600x400/?technology,innovation');">
-            <div class="overlay">
-                <h2>Praklap</h2>
-                <p>Project Presentations</p>
-                <button class="details-btn" onclick="showDetails('praklap')">See Details</button>
-            </div>
-        </div>
-
-        <div id="abhivyakti" class="event-card" style="background-image: url('https://source.unsplash.com/600x400/?education,conference');">
-            <div class="overlay">
-                <h2>Abhivyakti</h2>
-                <p>Paper Presentations</p>
-                <button class="details-btn" onclick="showDetails('abhivyakti')">See Details</button>
-            </div>
-        </div>
-
-        <div id="battleblitz" class="event-card" style="background-image: url('https://source.unsplash.com/600x400/?gaming,competition');">
-            <div class="overlay">
-                <h2>Battle Blitz</h2>
-                <p>Gaming Tournament</p>
-                <button class="details-btn" onclick="showDetails('battleblitz')">See Details</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Modal for Event Details -->
-    <div id="eventModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-            <h2 id="modalTitle"></h2>
-            <p id="modalDescription"></p>
-        </div>
+    <div class="event-card">
+      <h2>Abhivyakti</h2>
+      <div class="button-group">
+        <a href="abhivyakti-registration.html" class="event-button">Register</a>
+        <a href="abhivyakti-details.html" class="event-button">See Details</a>
+      </div>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Pioneer 2k25. All Rights Reserved.</p>
-    </footer>
+    <div class="event-card">
+      <h2>Praklap</h2>
+      <div class="button-group">
+        <a href="praklap-registration.html" class="event-button">Register</a>
+        <a href="praklap-details.html" class="event-button">See Details</a>
+      </div>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="event-card">
+      <h2>Battle Blitz</h2>
+      <div class="button-group">
+        <a href="battle-blitz-registration.html" class="event-button">Register</a>
+        <a href="battle-blitz-details.html" class="event-button">See Details</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
